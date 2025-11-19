@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+
+    <video id="intro-video" autoplay playsinline>
+        <source src="{{ url_for('static', filename='credit-card-bg.mp4') }}" type="video/mp4">
+    </video>
+
+
+    <img id="bg-image" src="{{ url_for('static', filename='bg credit.png') }}">
+
+
+    <div id="main-content">
+
+        <div class="container">
+        
+            <h1>💳 Credit Card Fraud Detection</h1>
+
+            <form action="/predict" method="POST">
+                <input type="number" name="step" placeholder="Step" required>
+                <select name="type" required>
+                    <option value="">Select Type</option>
+                    <option value="PAYMENT">PAYMENT</option>
+                    <option value="TRANSFER">TRANSFER</option>
+                    <option value="CASH_OUT">CASH_OUT</option>
+                    <option value="DEBIT">DEBIT</option>
+                </select>
+                <input type="number" step="0.01" name="amount" placeholder="Amount" required>
+                <input type="number" step="0.01" name="oldbalanceOrg" placeholder="Old Balance Orig" required>
+                <input type="number" step="0.01" name="newbalanceOrig" placeholder="New Balance Orig" required>
+                <input type="number" step="0.01" name="oldbalanceDest" placeholder="Old Balance Dest" required>
+                <input type="number" step="0.01" name="newbalanceDest" placeholder="New Balance Dest" required>
+                <button type="submit">Predict</button>
+            </form>
+
+            {% if prediction_text %}
+            <div class="result" style="border-color: {{ color }};">
+                <h3 style="color: {{ color }};">{{ prediction_text }}</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: {{ probability }}%; background-color: {{ color }};"></div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
