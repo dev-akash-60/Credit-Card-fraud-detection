@@ -1,9 +1,10 @@
-flask
+Flask
 gunicorn
 numpy
 pandas
 scikit-learn
 joblib
-html
-css
-javascript
+
+
+
+
