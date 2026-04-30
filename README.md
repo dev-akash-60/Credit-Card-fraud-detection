@@ -25,11 +25,14 @@ It uses a **multi-layer approach** combining:
 - LightGBM
 - SHAP
 - Matplotlib
+- HTML
+- CSS
+- JavaScript
 
 ---
 
 ## 📂 Project Structure
-
+Credit-Card-Fraud-Detection
 ---
 
 ## ⚙️ Installation
