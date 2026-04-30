@@ -32,7 +32,29 @@ It uses a **multi-layer approach** combining:
 ---
 
 ## 📂 Project Structure
-Credit-Card-Fraud-Detection
+
+```
+Credit-Card-Fraud-Detection/
+│
+├── app.py
+├── model.py
+├── encoder.pkl
+├── scaler.pkl
+├── requirements.txt
+│
+├── static/
+│   ├── bg credit.png
+│   ├── credit-card-bg.mp4
+│   ├── script.js
+│   └── style.css
+│
+├── templates/
+│   ├── index.html
+│   └── login.html
+│
+└── .env   # (not uploaded to GitHub)
+```
+    
 ---
 
 ## ⚙️ Installation
