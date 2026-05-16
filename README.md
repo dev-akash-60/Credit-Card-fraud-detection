@@ -57,6 +57,14 @@ Credit-Card-Fraud-Detection/
     
 ---
 
+## 📸 Preview
+### login interface
+![LoginDashboard](https://github.com/dev-akash-60/Credit-Card-fraud-detection/blob/main/login%20Dashboard.png?raw=true)
+
+### Prediction Dashboard
+
+![DashBoard](https://github.com/dev-akash-60/Credit-Card-fraud-detection/blob/main/Dashboard.png?raw=true)
+
 ## ⚙️ Installation
 Install dependencies:
 
